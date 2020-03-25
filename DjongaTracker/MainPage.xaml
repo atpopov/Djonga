@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DjongaTracker.MainPage" 
+             BackgroundImageSource="background.jpg">
+    
+    <Grid BackgroundColor="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <AbsoluteLayout Grid.Row="0">
+            <BoxView CornerRadius="25" Color="LightGreen" AbsoluteLayout.LayoutBounds="0.5, 0.39, 350, 150" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <Label x:Name="kur" FontSize="65" FontAttributes="Bold" TextColor="DarkGreen" AbsoluteLayout.LayoutBounds="1, 0.420, 290, 90" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        </AbsoluteLayout>
+        <StackLayout Orientation="Horizontal" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center" Spacing="40">
+            <Button CornerRadius="50" FontSize="25" BackgroundColor="LightGreen" Text="петичка" TextColor="DarkGreen" Clicked="Button_Clicked"/>
+            <Button CornerRadius="50" FontSize="25" BackgroundColor="LightGreen" Text="десятка" TextColor="DarkGreen" Clicked="Button_Clicked_1"/>
+        </StackLayout>
+        
+    </Grid>
+                 
+</ContentPage>
